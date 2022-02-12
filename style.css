@@ -1,0 +1,106 @@
+body {
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0px;
+  background-color: lightblue;
+}
+
+#navbar {
+  background-color: black;
+  opacity: 50%;
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+}
+
+.navlink {
+  color: white;
+}
+
+.navlink:hover {
+  color: pink;
+}
+
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  padding: 10px;
+}
+
+#section-1 {
+background-color: #d3c1dd;
+width: 100vw;
+text-align: center;
+border-style: dotted;
+border-color: black;
+}
+
+.image-tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+.tile {
+  background-color: rgb(202, 227, 195);
+  color: black;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.tile:hover {
+ opacity: 50%;
+ background-color: lightblue;
+}
+
+#img1, #img2, #img3 {
+  height: 1fr;
+  width: 30vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2px;
+}
+
+#section-2 {
+width: 100vw;
+color: black;
+text-align: justify;
+}
+
+li {
+  padding: 10px;
+}
+
+#section-3 {
+  background-color: #d3c1dd;
+}
+
+#github-img {
+  width: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 480px) {
+  .image-tiles {
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+.tile {
+  width: 100vw;
+  }
+}
