@@ -99,7 +99,13 @@ li {
   padding-bottom: 10px;
 }
 
+#date {
+  text-align: center;
+  font-size: 12px;
+}
+
 @media (max-width: 480px) {
   .image-tiles {
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
 }
